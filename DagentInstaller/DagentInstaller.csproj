@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="DagentInstaller\InstallDagent.cmd" />
+    <None Include="DagentInstaller\InstallDagent.ps1" />
+    <None Include="tools\DagentInstaller.ps1" />
+    <None Include="tools\DagentSetup.psm1" />
+    <None Include="tools\init.ps1" />
+  </ItemGroup>
+</Project>

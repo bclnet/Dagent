@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AgentsCommandAgentAddedSuccessfully" xml:space="preserve">
+    <value>Package agent with Name: {0} added successfully.</value>
+  </data>
+  <data name="AgentsCommandAgentDescription" xml:space="preserve">
+    <value>Path to the package(s) agent.</value>
+  </data>
+  <data name="AgentsCommandAgentDisabledSuccessfully" xml:space="preserve">
+    <value>Package agent with Name: {0} disabled successfully.</value>
+  </data>
+  <data name="AgentsCommandAgentEnabledSuccessfully" xml:space="preserve">
+    <value>Package agent with Name: {0} enabled successfully.</value>
+  </data>
+  <data name="AgentsCommandAgentRemovedSuccessfully" xml:space="preserve">
+    <value>Package agent with Name: {0} removed successfully.</value>
+  </data>
+  <data name="AgentsCommandAgentRequired" xml:space="preserve">
+    <value>The agent specified cannot be empty. Please provide a valid agent.</value>
+  </data>
+  <data name="AgentsCommandAllNameIsReserved" xml:space="preserve">
+    <value>Package agent name 'All' is a reserved name.</value>
+  </data>
+  <data name="AgentsCommandDescription" xml:space="preserve">
+    <value>Provides the ability to manage list of agents located in %AppData%\NuGet\NuGet.config</value>
+  </data>
+  <data name="AgentsCommandDisabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="AgentsCommandEnabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="AgentsCommandFormatDescription" xml:space="preserve">
+    <value>AgentsCommandFormatDescription</value>
+  </data>
+  <data name="AgentsCommandInvalidAgent" xml:space="preserve">
+    <value>The agent specified is invalid. Please provide a valid agent.</value>
+  </data>
+  <data name="AgentsCommandNameDescription" xml:space="preserve">
+    <value>Name of the agent.</value>
+  </data>
+  <data name="AgentsCommandNameRequired" xml:space="preserve">
+    <value>The name specified cannot be empty. Please provide a valid name.</value>
+  </data>
+  <data name="AgentsCommandNoAgents" xml:space="preserve">
+    <value>No agents found.</value>
+  </data>
+  <data name="AgentsCommandNoMatchingAgentsFound" xml:space="preserve">
+    <value>Unable to find any package agent(s) matching name: {0}.</value>
+  </data>
+  <data name="AgentsCommandRegisteredAgents" xml:space="preserve">
+    <value>Registered Agents:</value>
+  </data>
+  <data name="AgentsCommandUniqueAgent" xml:space="preserve">
+    <value>The agent specified has already been added to the list of available package agents. Please provide a unique remote.</value>
+  </data>
+  <data name="AgentsCommandUniqueName" xml:space="preserve">
+    <value>The name specified has already been added to the list of available package agents. Please provide a unique name.</value>
+  </data>
+  <data name="AgentsCommandUpdateSuccessful" xml:space="preserve">
+    <value>AgentsCommandUpdateSuccessful</value>
+  </data>
+  <data name="AgentsCommandUsageSummary" xml:space="preserve">
+    <value>&lt;List|Add|Remove|Enable|Disable|Update&gt; -Name [name] -Agent [agent]</value>
+  </data>
+  <data name="DeployCommandApiKey" xml:space="preserve">
+    <value>The API key for the remote.</value>
+  </data>
+  <data name="DeployCommandDescription" xml:space="preserve">
+    <value>Deploys a package that was uploaded to the server to a remote Deployment Agent. If no sources are specified, all sources defined in %AppData%\NuGet\NuGet.config are used.  If NuGet.config specifies no sources, uses the default NuGet feed.</value>
+  </data>
+  <data name="DeployCommandEmailDescription" xml:space="preserve">
+    <value>DeployCommandEmailDescription</value>
+  </data>
+  <data name="DeployCommandIncludeDependencyDescription" xml:space="preserve">
+    <value>DeployCommandIncludeDependencyDescription</value>
+  </data>
+  <data name="DeployCommandIncludeVersionDescription" xml:space="preserve">
+    <value>If not set, the destination folder will contain only the package name, not the version number</value>
+  </data>
+  <data name="DeployCommandInvalidPackageReference" xml:space="preserve">
+    <value>'{0}' contains invalid package references.</value>
+  </data>
+  <data name="DeployCommandNoItemsFound" xml:space="preserve">
+    <value>DeployCommandNoItemsFound in '{0}'</value>
+  </data>
+  <data name="DeployCommandPackageReferenceInvalidVersion" xml:space="preserve">
+    <value>Version string specified for package reference '{0}' is invalid.</value>
+  </data>
+  <data name="DeployCommandPrerelease" xml:space="preserve">
+    <value>Allows prerelease packages to be installed. This flag is not required when restoring packages by installing from packages.config.</value>
+  </data>
+  <data name="DeployCommandProjectDescription" xml:space="preserve">
+    <value>DeployCommandProjectDescription</value>
+  </data>
+  <data name="DeployCommandSent" xml:space="preserve">
+    <value>'{1}' Sent to '{0}'</value>
+  </data>
+  <data name="DeployCommandUsageDescription" xml:space="preserve">
+    <value>Specify the id and optionally the version of the package to install. If a path to a packages.config file is used instead of an id, all the packages it contains are installed.</value>
+  </data>
+  <data name="DeployCommandUsageExamples" xml:space="preserve">
+    <value>nuget deploy msmq://agentHost/dagent elmah\n\nnuget install packages.config\n\nnuget install ninject -o c:\foo</value>
+  </data>
+  <data name="DeployCommandUsageSummary" xml:space="preserve">
+    <value>deploy packageId|pathToPackagesConfig [API key] [options]</value>
+  </data>
+  <data name="DeployCommandVersionDescription" xml:space="preserve">
+    <value>The version of the package to install.</value>
+  </data>
+  <data name="DeployCommandWaitDescription" xml:space="preserve">
+    <value>DeployCommandWaitDescription</value>
+  </data>
+  <data name="DeployLocalCommandDescription" xml:space="preserve">
+    <value>Deploys a package that was uploaded to the server. If no sources are specified, all sources defined in %AppData%\NuGet\NuGet.config are used.  If NuGet.config specifies no sources, uses the default NuGet feed.</value>
+  </data>
+  <data name="DeployLocalCommandProjectDescription" xml:space="preserve">
+    <value>DeployLocalCommandProjectDescription</value>
+  </data>
+  <data name="DeployLocalCommandUsageDescription" xml:space="preserve">
+    <value>Specify the id and optionally the version of the package to install. If a path to a packages.config file is used instead of an id, all the packages it contains are installed.</value>
+  </data>
+  <data name="DeployLocalCommandUsageExamples" xml:space="preserve">
+    <value>nuget deploylocal elmah\n\nnuget install packages.config\n\nnuget install ninject -o c:\foo</value>
+  </data>
+  <data name="DeployLocalCommandUsageSummary" xml:space="preserve">
+    <value>packageId|pathToPackagesConfig [API key] [options]</value>
+  </data>
+  <data name="InstallCommandNothingToInstall" xml:space="preserve">
+    <value>All packages listed in {0} are already installed.</value>
+  </data>
+  <data name="NoAgentApiKeyFound" xml:space="preserve">
+    <value>No API Key was provided and no API Key could be found for {0}. To save an API Key for a source use the 'setApiKey' command.</value>
+  </data>
+  <data name="NoAgentQueueFound" xml:space="preserve">
+    <value>NoAgentQueueFound '{0}'</value>
+  </data>
+  <data name="ReservedPackageNameAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="RestoreCommandPackageRestoreOptOutMessage" xml:space="preserve">
+    <value>Restoring NuGet packages...
+To prevent NuGet from downloading packages during build, open the Visual Studio Options dialog, click on the NuGet Package Manager node and uncheck '{0}'.</value>
+  </data>
+</root>
