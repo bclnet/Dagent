@@ -26,48 +26,6 @@ namespace Dagent.CommandLine
     [Command(typeof(Local), "deployLocal", "DeployLocalCommandDescription", UsageDescriptionResourceName = "DeployLocalCommandUsageDescription", UsageSummaryResourceName = "DeployLocalCommandUsageSummary", UsageExampleResourceName = "DeployLocalCommandUsageExamples")]
     public class DeployLocalCommand : InstallCommand
     {
-        [ImportingConstructor]
-        public DeployLocalCommand(IScriptExecutor scriptExecutor)
-            : base()
-        {
-            ScriptExecutor = scriptExecutor;
-            NoCache = true;
-        }
-
-        //protected override IPackageManager CreatePackageManager(IFileSystem fileSystem)
-        //{
-        //    var project = Project;
-        //    var packageManager = base_CreatePackageManager(fileSystem);
-        //    EventHandler<PackageOperationEventArgs> installedHandler = (sender, e) =>
-        //    {
-        //        try { ScriptExecutor.ExecuteInstallScript(e.InstallPath, e.Package, project, NullLogger.Instance); }
-        //        catch (Exception ex)
-        //        {
-        //            Console.WriteLine("InstallScript: " + ex.Message);
-        //            Console.WriteLine();
-        //            Console.WriteLine(ex.StackTrace);
-        //        }
-        //    };
-        //    EventHandler<PackageOperationEventArgs> uninstalledHandler = (sender, e) =>
-        //    {
-        //        try { ScriptExecutor.ExecuteUninstallScript(e.InstallPath, e.Package, project, NullLogger.Instance); }
-        //        catch (Exception ex)
-        //        {
-        //            Console.WriteLine("UninstallScript: " + ex.Message);
-        //            Console.WriteLine();
-        //            Console.WriteLine(ex.StackTrace);
-        //        }
-        //    };
-        //    packageManager.PackageInstalled += installedHandler;
-        //    packageManager.PackageUninstalled += uninstalledHandler;
-        //    return packageManager;
-        //}
-
-        [Option(typeof(Local), "DeployLocalCommandProjectDescription")]
-        public object Project { get; set; }
-
-        protected IScriptExecutor ScriptExecutor { get; set; }
-
         #region base
 
         static MethodInfo _CalculateEffectivePackageSaveModeInfo = typeof(DownloadCommandBase).GetMethod("CalculateEffectivePackageSaveMode", BindingFlags.NonPublic | BindingFlags.Instance);
@@ -76,6 +34,19 @@ namespace Dagent.CommandLine
         static MethodInfo _PrintPackageSourcesInfo = typeof(InstallCommand).Assembly.GetType("NuGet.CommandLine.ConsoleExtensions").GetMethod("PrintPackageSources", BindingFlags.Public | BindingFlags.Static);
 
         #endregion
+
+        [ImportingConstructor]
+        public DeployLocalCommand(IScriptExecutor scriptExecutor)
+            : base()
+        {
+            ScriptExecutor = scriptExecutor;
+            NoCache = true;
+        }
+
+        [Option(typeof(Local), "DeployLocalCommandProjectDescription")]
+        public object Project { get; set; }
+
+        protected IScriptExecutor ScriptExecutor { get; set; }
 
         public override Task ExecuteCommandAsync()
         {
